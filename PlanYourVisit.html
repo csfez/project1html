@@ -32,23 +32,22 @@
         <p>Sat and Holiday 09:00-17:00</p>
 
     </div>
-    <iframe id="myiframe" style="height:450px;width:100%;"  src="https://jerusalemzoo.smarticket.co.il/#next_shows"></iframe> 
+    <iframe id="myiframe" hidden style="height:450px;width:100%;"  src="https://jerusalemzoo.smarticket.co.il/#next_shows"></iframe> 
 
     
-    <button onclick="toggle(this);">Hide</button>
-    
+    <button onclick="toggle(this);">Order Your Tickets</button>
+
     <script>
       let toggle = button => {
-        let hidden = element.getAttribute("hidden");
         let element = document.getElementById("myiframe");
-        
+        let hidden = element.getAttribute("hidden");
         
         if (hidden) {
            element.removeAttribute("hidden");
            button.innerText = "Hide";
         } else {
            element.setAttribute("hidden", "hidden");
-           button.innerText = "Order Tickets";
+           button.innerText = "Order Your Tickets";
         }
       }
     </script>
