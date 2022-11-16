@@ -26,15 +26,18 @@
     <img src="https://mobiliard8.rokka.io/node_header_image/20d51092e8086a431d0e4369187bc32bdc26643b/header-zoo-leva-2020-0.jpg?itok=r-0i0pbX" class="responsive">  
     <div class="bottom-left">Contact Us</div>
     </div>
-    <form>  
-        Name: <input type="text" name="firstname" required /> <br/>  
-        Email:  <input type="text" name="lastname" required /> <br/> 
+    <form id="MessageForm">  
+        Name: <input type="text" name="name" required /> <br/>  
+        Email:  <input type="text" name="email" required /> <br/> 
         Message: <br>    
         <textarea cols="80" rows="5" value="message" required>    
         </textarea>    
         <br/> 
         <input type="submit" value="Submit">  
+        <output form="MessageForm" for="name email">
 
+        </output>
      </form>  
+     
 </body>
 </html>
