@@ -15,7 +15,7 @@ h2{
 
 h3{
   margin: 0 10px;
-  font-size:large;
+  font-size:larger;
   color:#007b4e;
 }
 
@@ -31,13 +31,15 @@ iframe{
   font-size: 30px;
 }
 
-form{
+form, table{
   margin: 0 10px;
 }
 
 p{
   margin: 10px 10px;
+ 
 }
+
 
 .container{
   position: relative;
@@ -251,6 +253,19 @@ object-fit: cover;
 }
 
 
+.flex-container {
+  display: flex;
+  background-color: rgb(105, 195, 124);
+  flex-direction: column;
+}
+
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -259,3 +274,34 @@ object-fit: cover;
   width: 100%;
 }
 }
+
+@keyframes anchor-underline {
+  0%, 10% {
+    left: 0;
+    right: 100%;
+  }
+  40%, 60% {
+    left: 0;
+    right: 0;
+  }
+  90%, 100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  background-size: 100% 4px;
+}
+
